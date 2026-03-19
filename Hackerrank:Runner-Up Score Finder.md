@@ -20,8 +20,17 @@ To write a Python program that takes a list of scores from participants and find
 
 ## 💻 PROGRAM:
 
-ADD CODE HERE
+```
+n = int(input())
+scores = list(map(int, input().split()))
+unique_scores = set(scores)
+unique_scores.remove(max(unique_scores))
+runner_up = max(unique_scores)
+print(runner_up)
+```
 
 ## OUTPUT
+<img width="424" height="171" alt="image" src="https://github.com/user-attachments/assets/0b3b2f67-5eb5-4e1a-bb83-fe8d2daf03aa" />
 
 ## RESULT
+Thus, the python program to find the runner-up score from a list of scores has been executed successfully.
